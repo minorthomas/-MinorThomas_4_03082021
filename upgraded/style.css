@@ -90,10 +90,10 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
+/*.texture-paper::before {
     background: url("img/texture-paper.webp");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -770,15 +770,15 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #94360A;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #94360A;
     color: #FFFFFF!important;
 }
 
@@ -796,7 +796,7 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #94360A!important;
 }
 
 .ltc-atomic-tangerine:hover {
