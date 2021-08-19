@@ -362,6 +362,18 @@ a:hover {
     z-index: 2;
 }
 
+.site-navigation a{
+    border-bottom: 2px solid transparent;
+}
+
+.site-navigation .active{
+    border-bottom: 2px solid #F3976C;
+}
+
+.site-navigation a:hover{
+    border-bottom: 2px solid #F3976C;
+}
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -518,6 +530,10 @@ button {
     right: 20px;
     z-index: 500;
     transition: all .3s ease-in-out;
+}
+
+.scrollToTop:hover{
+    background-color: rgba(48, 48, 48, 0.7);
 }
 
 .scrollToTop span {
@@ -765,12 +781,16 @@ h4 {
     background-color: #FFFFFF;
 }
 
+.dark-color{
+    color: #000;
+}
+
 .bgc-dark-slate-blue {
     background-color: #364577;
 }
 
 .bgc-atomic-tangerine {
-    background-color: #94360A;
+    background-color: #F3976C;
 }
 
 .tc-white {
@@ -778,7 +798,7 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #94360A;
+    background: #F3976C;
     color: #FFFFFF!important;
 }
 
@@ -791,16 +811,8 @@ h4 {
     color: #FFFFFF!important;
 }
 
-.ltc-white:hover {
-    color: #cccccc!important;
-}
-
 .ltc-atomic-tangerine {
     color: #F3976C!important;
-}
-
-.ltc-atomic-tangerine:hover {
-    color: #c27956!important;
 }
 
 .icon-dark-slate-blue {

@@ -34,17 +34,17 @@
 		<nav class="navbar row">
 			<div class="navbar-header">
 				<a class="navbar-brand" href="index.html"><img src="img/la-chouette-agence.png" alt="Logo Lachouetteagence" height="40" /></a>
-				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				<button id="nav-toggle" type="button"  class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only" aria-label="Ouvrir menu de navigation">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
 				</button>
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
 					<li>
-						<a href="index.html">Accueil</a>
+						<a href="index.html" aria-label="Accueil">Accueil</a>
 					</li>
 					<li>
-						<a href="contact.html">Contact</a>
+						<a href="contact.html" aria-label="Contact" class="active dark-color">Contact</a>
 					</li>
 				</ul>
 			</div>
@@ -76,31 +76,31 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate>
+				<form id="form_1" method="post" novalidate>
 					<div class="form-group">
-						<label>
+						<label for="name">
 							Nom
 						</label>
-						<input id="name" class="form-control" required />
+						<input id="name" name="name" class="form-control" aria-label="Entrez votre nom" autofocus required/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="email">
 							Adresse email
 						</label>
-						<input id="email" class="form-control" type="email" required />
+						<input id="email" name="email" class="form-control" type="email" aria-label="Entrez votre adresse mail" required/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="input_504">
 							Comment nous avez-vous connu ?
 						</label>
-						<input class="form-control" required id="input_504" />
+						<input id="input_504" class="form-control" type="text" name="input_504" aria-label="Entrez comment vous nous avez connu " required/>
 					</div>
 					<div class="form-group">
-						<label>
+						<label for="message">
 							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
+						</label><textarea id="message" name="message" type="text" class="form-control" rows="4" cols="50" aria-label="Entrez le brief de votre projet" required></textarea>
 					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" aria-label="Envoyer formulaire" type="submit">
 						Envoyer
 					</button>
 				</form>
@@ -116,7 +116,7 @@
 <!-- bloc-7 END -->
 
 <!-- ScrollToTop Button -->
-<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+<a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up" aria-label="Scroll vers le haut"></span></a>
 <!-- ScrollToTop Button END-->
 
 
@@ -131,22 +131,22 @@
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="#"><span class="fa fa-twitter icon-md"></span></a>
+							<a class="social" href="#"><span class="fa fa-twitter icon-md" aria-label="Twitter"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="#"><span class="fa fa-facebook icon-md"></span></a>
+							<a class="social" href="#" ><span class="fa fa-facebook icon-md" aria-label="Facebook"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="#"><span class="fa fa-dribbble icon-md"></span></a>
+							<a class="social" href="#" ><span class="fa fa-dribbble icon-md" aria-label="Dribbble"></span></a>
 						</div>
 					</div>
 					<div class="col-sm-3">
 						<div class="text-center">
-							<a class="social" href="#"><span class="fa fa-instagram icon-md"></span></a>
+							<a class="social" href="#"><span class="fa fa-instagram icon-md" aria-label="Instagram"></span></a>
 						</div>
 					</div>
 				</div>
